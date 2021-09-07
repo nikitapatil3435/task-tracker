@@ -1,0 +1,188 @@
+* {
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.container {
+    margin: 10px 15px 15px 15px;
+    border: 2px solid #000;
+    width: 210mm;
+    height: 297mm;
+}
+
+
+/* change */
+
+.wrapper {
+    margin: 5px 5px 5px 5px;
+    border: 1 solid rgb(88, 88, 88);
+    overflow: hidden;
+}
+
+.wrapper div {
+    min-height: 130px;
+}
+
+#one {
+    float: left;
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 100px;
+    height: 130px;
+    /* border-right: 2px solid rgb(88, 88, 88); */
+    text-align: center;
+    padding: 5px;
+}
+
+#one img {
+    width: 150px;
+    height: 130px;
+}
+
+#two {
+    overflow: hidden;
+    margin: 5px;
+    height: 130px;
+    text-align: center;
+}
+
+.container_emp_info {
+    /* width: 100%; */
+    height: 125px;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+
+#st-box {
+    float: left;
+    width: 50%;
+    height: 120px;
+    font-size: 14px;
+    padding-left: 5px;
+    border-right: 1px solid black;
+}
+
+#nd-box {
+    float: left;
+    width: 50%;
+    height: 120px;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.proforma_inv_date {
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    margin-top: -10px;
+    padding-left: 5px;
+    border-bottom: 1px solid black;
+}
+
+.salary_tbl {
+    font-size: 14px;
+    width: 100%;
+    /* margin-top: 20px; */
+    padding-top: 45px;
+    padding-left: -20px;
+    display: block;
+}
+
+.last_section {
+    width: 100%;
+    border-top: 1px solid black;
+    padding-left: 2px;
+}
+
+#sign_1 {
+    float: left;
+    width: 190px;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-top: 38px;
+}
+
+#sign_2 {
+    float: left;
+    width: 335px;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-top: 38px;
+}
+
+#sign_3 {
+    float: right;
+    width: 230px;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-top: 38px;
+}
+
+
+/* change */
+
+.page-header,
+.page-header-space {
+    height: 225px;
+}
+
+.page-footer,
+.page-footer-space {
+    height: 80px;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* border-top: 1px solid black; */
+    /* for demo */
+    /*background: yellow;  for demo */
+}
+
+.page-header {
+    position: fixed;
+    top: 0mm;
+    width: 210mm;
+    /* width: 100%; */
+    /* border-bottom: 1px solid black; */
+    /* for demo */
+    /* background: yellow; for demo */
+}
+
+
+/*.page {
+        page-break-after: always;
+      }*/
+
+
+/* @page {
+	    margin: 20mm
+	} */
+
+@page {
+    size: A4;
+    /* margin: 0; */
+}
+
+@media print {
+     thead {
+        display: table-header-group;
+    }
+    tfoot {
+        display: table-footer-group;
+         margin-top: 100px; 
+    } 
+    button {
+        display: none;
+    }
+    /* body {
+	                margin: 0;
+                } */
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+}
